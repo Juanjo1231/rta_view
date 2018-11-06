@@ -1,0 +1,30 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 2,
+
+  "name": "rta_tools",
+  "description": "Tools for Walmart Real Time Analysts.",
+  "version": "0.0.0.2",
+
+  "page_action": {
+    "default_icon": "images/icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "declarativeContent"
+  ],
+    "background": {
+    "scripts": ["js/jquery.js", "background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://home-c12.incontact.com/inContact*"],
+      "css": ["css/rta.css"],
+      "js": ["js/jquery.js"]
+    }
+  ],
+  "web_accessible_resources": ["css/rta.css"]
+}

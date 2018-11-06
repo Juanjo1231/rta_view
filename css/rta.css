@@ -1,0 +1,18 @@
+body{
+  font-family: Arial;
+}
+.ui-resizable-s {
+  height: 10px;
+}
+.ui-resizable-e {
+  width: 10px;
+}
+.ui-resizable-s,
+.ui-resizable-e {
+  background-color: hsla(210, 40%, 40%, 0.5);
+  transition: 200ms;
+}
+.ui-resizable-s:hover,
+.ui-resizable-e:hover {
+  background-color: hsla(210, 40%, 40%, 1);
+}
