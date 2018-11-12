@@ -14,4 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
       file: 'js/rta_view_3.js'
     });
   }
+
+  document.getElementById('fossil').onclick = () => {
+    chrome.tabs.executeScript({
+      file: 'js/fossil_view.js'
+    });
+  }
 })

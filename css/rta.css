@@ -16,3 +16,80 @@ body{
 .ui-resizable-e:hover {
   background-color: hsla(210, 40%, 40%, 1);
 }
+
+/* FOSSIL VIEW */
+.rta-table {
+  border: 1px solid #ccc;
+  display: inline-block;
+}
+.rta-table .title {
+  text-align: center;
+  padding: 0.5em;
+}
+.rta-table .title img {
+  margin: 0 0.4em;
+}
+.rta-table .rta-table-section ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  background-color: #fff;
+}
+.rta-table .rta-table-section ul li {
+  display: grid;
+  grid-template-columns: 1em 12em 4em auto;
+  background-color: rgba(160,160,160,0.2);
+  margin: 0.2em 0;
+  align-items: center;
+}
+.rta-table .rta-table-section ul li div {
+  padding: 0.3em 0.5em;
+}
+.rta-table .rta-table-section ul li .aux-text {
+  font-size: 0;
+}
+.rta-table .rta-table-section ul li .type {
+  transform: scale(0.6);
+}
+.rta-table .rta-table-section ul li .name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+}
+.rta-table .rta-table-section ul li .time {
+  text-align: right;
+  flex-grow: 0.5;
+}
+.rta-table .rta-table-section ul li .hold {
+  text-align: center;
+  font-size: 0.8em;
+  position: relative;
+}
+.rta-table .rta-table-section ul li .hold::after {
+  content: 'Hold';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(70%, -50%);
+  background-color: #1e1e1e;
+  color: #fff;
+  border-radius: 0.5em;
+  opacity: 0;
+  z-index: -1;
+  transition: 200ms;
+  font-size: 0;
+  padding: 0;
+}
+.rta-table .rta-table-section ul li .hold:hover::after {
+  opacity: 0.9;
+  z-index: 100;
+  font-size: 0.8em;
+  padding: 0.4em;
+}
+.rta-table .rta-table-section ul li .hold span {
+  background-color: #ccc;
+  display: inline-block;
+  padding: 0.4em;
+  border-radius: 0.5em;
+}

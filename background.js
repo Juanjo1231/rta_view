@@ -2,8 +2,8 @@ const rule = {
   conditions: [
     new chrome.declarativeContent.PageStateMatcher({
       pageUrl: {
-        hostEquals: 'home-c12.incontact.com'
-      },
+        hostSuffix: 'incontact.com'
+      }
     })
   ],
   actions: [new chrome.declarativeContent.ShowPageAction()]

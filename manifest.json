@@ -5,7 +5,7 @@
 
   "name": "rta_tools",
   "description": "Tools for Walmart Real Time Analysts.",
-  "version": "0.0.0.2",
+  "version": "0.0.1.1",
 
   "page_action": {
     "default_icon": "images/icon.png",
@@ -22,8 +22,11 @@
   "content_scripts": [
     {
       "matches": ["https://home-c12.incontact.com/inContact*"],
-      "css": ["css/rta.css"],
       "js": ["js/jquery.js"]
+    },
+    {
+      "matches": ["https://home-c12.incontact.com/inContact*", "https://home-c31.incontact.com/inContact*"],
+      "css": ["css/rta.css"]
     }
   ],
   "web_accessible_resources": ["css/rta.css"]
