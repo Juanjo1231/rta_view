@@ -18,7 +18,6 @@
       h1 {
         padding: 1em;
         font-size: 14px;
-        border-bottom: 1px solid #ccc;
         margin: 0;
       }
       button {
@@ -33,13 +32,27 @@
       button:hover {
         background-color: #ccc;
       }
+
+      .hdr {
+        display: flex;
+        border-bottom: 1px solid #ccc;
+        align-items: center;
+      }
+      .hdr img {
+        width: 5em;
+        height: 5em;
+      }
     </style>
     <script src="popup.js"></script>
   </head>
 
   <body>
 
-    <h1>RTA Dashboard View</h1>
+
+    <section class="hdr">
+      <img src="/images/logo-150x150.png">
+      <h1>RTA Dashboard View</h1>
+    </section>
 
     <button id="rta2">RTA View Walmart - 2.0</button>
     <button id="rta3">RTA View Walmart - 3.0</button>
