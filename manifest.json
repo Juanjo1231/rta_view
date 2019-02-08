@@ -5,7 +5,7 @@
 
   "name": "RTA Tools",
   "description": "Tools for Walmart Real Time Analysts.",
-  "version": "0.1.7",
+  "version": "0.1.8",
 
   "page_action": {
     "default_icon": "images/icon.png",
